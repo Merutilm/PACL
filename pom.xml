@@ -3,12 +3,9 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>kr.merutilm</groupId>
-        <artifactId>mmpp</artifactId>
-        <version>1.15</version>
-    </parent>
-
+    
+    <groupId>kr.merutilm</groupId>
+    <version>1.15</version>
     <artifactId>pacl</artifactId>
 
     <properties>
@@ -17,21 +14,28 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+    
     <dependencies>
         <dependency>
-            <groupId>kr.merutilm</groupId>
-            <artifactId>basestructures</artifactId>
-            <version>1.15</version>
-        </dependency>
+	        <groupId>com.github.Merutilm</groupId>
+	        <artifactId>Base-Structures</artifactId>
+	        <version>v1.0.01</version>
+	    </dependency>
+        <dependency>
+	        <groupId>com.github.Merutilm</groupId>
+	        <artifactId>Custom-Swing</artifactId>
+	        <version>v1.0.02</version>
+	    </dependency>
         <dependency>
             <groupId>org.bytedeco</groupId>
             <artifactId>javacv-platform</artifactId>
             <version>1.5.7</version>
-        </dependency>
-        <dependency>
-            <groupId>kr.merutilm</groupId>
-            <artifactId>customswing</artifactId>
-            <version>1.15</version>
         </dependency>
     </dependencies>
 
